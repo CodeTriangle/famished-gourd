@@ -1,17 +1,13 @@
 [gd_scene format=3 uid="uid://dlfviotesfe7k"]
 
-[ext_resource type="Texture2D" uid="uid://dqtfno0xqgxyb" path="res://assets/foods/sprites/cheese.png" id="1_hluqm"]
 [ext_resource type="Script" uid="uid://c48jof5o684xn" path="res://scripts/food_item.gd" id="2_h0nvs"]
-[ext_resource type="Resource" uid="uid://cepwmjt8j2ole" path="res://resources/foods/cheese.tres" id="3_h0nvs"]
 
 [node name="food-item" type="TextureButton" unique_id=893732441]
-offset_right = 250.0
-offset_bottom = 250.0
-texture_normal = ExtResource("1_hluqm")
+offset_right = 150.0
+offset_bottom = 150.0
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_h0nvs")
-info = ExtResource("3_h0nvs")
 
 [node name="nameplayer" type="AudioStreamPlayer" parent="." unique_id=1294055423]
 

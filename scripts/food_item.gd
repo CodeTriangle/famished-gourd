@@ -5,10 +5,11 @@ extends TextureButton
 @export var info: FoodInfo
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var nameplayer: AudioStreamPlayer = get_node("nameplayer")
-	nameplayer.stream = info.sound
+	self.texture_normal = info.texture
+	$nameplayer.stream = info.sound
 
 
 func _on_pressed() -> void:

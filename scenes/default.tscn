@@ -38,8 +38,11 @@ offset_bottom = 41.0
 text = "Connect to AP"
 
 [node name="gourd" parent="." unique_id=734122865 instance=ExtResource("2_nvwnn")]
-position = Vector2(565, 332)
+position = Vector2(565, 268)
 
 [node name="food-item-container" parent="." unique_id=1536521958 instance=ExtResource("3_nvwnn")]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=766409769]
+polygon = PackedVector2Array(0, 330, 1152, 330, 1152, 648, 0, 648)
 
 [connection signal="pressed" from="Control/play-button" to="Control/play-button" method="_on_pressed"]
