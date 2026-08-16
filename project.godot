@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Famished Gourd"
+run/main_scene="res://scenes/default.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Archipelago="*uid://c0ovofocoscyg"
 
 [display]
 
