@@ -1,14 +1,14 @@
+class_name FoodItem
 extends TextureButton
+
 
 @export var info: FoodInfo
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$nameplayer.stream = info.sound;
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	var nameplayer: AudioStreamPlayer = get_node("nameplayer")
+	nameplayer.stream = info.sound
 
 
 func _on_pressed() -> void:

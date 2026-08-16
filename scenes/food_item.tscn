@@ -5,10 +5,8 @@
 [ext_resource type="Resource" uid="uid://cepwmjt8j2ole" path="res://resources/foods/cheese.tres" id="3_h0nvs"]
 
 [node name="food-item" type="TextureButton" unique_id=893732441]
-offset_left = 75.0
-offset_top = 308.0
-offset_right = 325.0
-offset_bottom = 558.0
+offset_right = 250.0
+offset_bottom = 250.0
 texture_normal = ExtResource("1_hluqm")
 ignore_texture_size = true
 stretch_mode = 0

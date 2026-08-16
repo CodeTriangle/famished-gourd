@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://m538r6yoscsi" path="res://scripts/play_button.gd" id="1_7vjpr"]
 [ext_resource type="PackedScene" uid="uid://doy0r1ygbe1fn" path="res://scenes/gourd.tscn" id="2_nvwnn"]
-[ext_resource type="PackedScene" uid="uid://dlfviotesfe7k" path="res://scenes/food_item.tscn" id="3_ya6ni"]
+[ext_resource type="PackedScene" uid="uid://cevxv7ox6vp35" path="res://scenes/food_item_container.tscn" id="3_nvwnn"]
 
 [node name="Node2D" type="Node2D" unique_id=1586609170]
 
@@ -40,6 +40,6 @@ text = "Connect to AP"
 [node name="gourd" parent="." unique_id=734122865 instance=ExtResource("2_nvwnn")]
 position = Vector2(565, 332)
 
-[node name="food-item" parent="." unique_id=893732441 instance=ExtResource("3_ya6ni")]
+[node name="food-item-container" parent="." unique_id=1536521958 instance=ExtResource("3_nvwnn")]
 
 [connection signal="pressed" from="Control/play-button" to="Control/play-button" method="_on_pressed"]

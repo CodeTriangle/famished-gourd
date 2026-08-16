@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cevxv7ox6vp35"]
+
+[ext_resource type="Script" uid="uid://df2rntyf8f2mq" path="res://scripts/food_item_container.gd" id="1_jb8ht"]
+
+[node name="food-item-container" type="Node" unique_id=1536521958]
+script = ExtResource("1_jb8ht")
