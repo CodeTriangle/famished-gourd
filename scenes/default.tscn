@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://cs75x5qpd7837"]
 
+[ext_resource type="Script" uid="uid://m538r6yoscsi" path="res://scripts/play_button.gd" id="1_7vjpr"]
+[ext_resource type="PackedScene" uid="uid://doy0r1ygbe1fn" path="res://scenes/gourd.tscn" id="2_nvwnn"]
+[ext_resource type="PackedScene" uid="uid://dlfviotesfe7k" path="res://scenes/food_item.tscn" id="3_ya6ni"]
+
 [node name="Node2D" type="Node2D" unique_id=1586609170]
 
 [node name="Control" type="Control" parent="." unique_id=170232059]
@@ -12,14 +16,30 @@ offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control" unique_id=1171661992]
+[node name="play-button" type="Button" parent="Control" unique_id=1171661992]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -60.0
-offset_top = 20.0
+offset_top = 10.0
 offset_right = -19.0
-offset_bottom = 51.0
+offset_bottom = 41.0
 grow_horizontal = 0
 text = "Play"
+script = ExtResource("1_7vjpr")
+
+[node name="ap-button" type="Button" parent="Control" unique_id=1883780354]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 127.0
+offset_bottom = 41.0
+text = "Connect to AP"
+
+[node name="gourd" parent="." unique_id=734122865 instance=ExtResource("2_nvwnn")]
+position = Vector2(565, 332)
+
+[node name="food-item" parent="." unique_id=893732441 instance=ExtResource("3_ya6ni")]
+
+[connection signal="pressed" from="Control/play-button" to="Control/play-button" method="_on_pressed"]
