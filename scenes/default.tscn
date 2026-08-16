@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cs75x5qpd7837"]
+
+[node name="Node2D" type="Node2D" unique_id=1586609170]
+
+[node name="Control" type="Control" parent="." unique_id=170232059]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Control" unique_id=1171661992]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -60.0
+offset_top = 20.0
+offset_right = -19.0
+offset_bottom = 51.0
+grow_horizontal = 0
+text = "Play"
